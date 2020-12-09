@@ -13,6 +13,7 @@ const Login = ({ history }) => {
     }
   };
   const handleLogin = async () => {
+    console.log(email, pw);
     await Axios.post("/user/login", {
       data: {
         email,
@@ -20,11 +21,11 @@ const Login = ({ history }) => {
       },
     })
       .then((res) => {
-        console.log(res.data);
+        console.log(res);
         if (res.data.error) {
           alert(res.data.error);
         } else {
-          alert(res.data);
+          alert(res.data.sess);
           history.push("/");
         }
       })

@@ -2,7 +2,7 @@ import Axios from "axios";
 import React from "react";
 import { useState } from "react";
 
-const Register = () => {
+const Register = ({ history }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
@@ -25,18 +25,17 @@ const Register = () => {
   };
   const handleRegister = () => {
     console.log("asd");
-    Axios.post("http://localhost:8080/user/register", {
-      data: {
-        name,
-        email,
-        pw,
-      },
+    Axios.post("/user/register", {
+      name,
+      email,
+      pw,
     })
       .then((res) => {
         if (res.data.error) {
           alert(res.data.error);
         } else {
           alert("회원가입이 가능합니다");
+          history.push("/");
         }
       })
       .catch((err) => console.log(err));

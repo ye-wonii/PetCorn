@@ -1,0 +1,621 @@
+.Main-wrap {
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+/* 헤더 */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 138px;
+  padding: 1rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  left: 99px;
+  top: 54px;
+}
+
+.signinBtn {
+  position: absolute;
+  width: 57px;
+  height: 22px;
+  left: 1670px;
+  top: 42px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: #ff9191;
+}
+
+.signupBtn {
+  position: absolute;
+  width: 65px;
+  height: 22px;
+  left: 1804px;
+  top: 42px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 22px;
+
+  color: #ff9191;
+}
+.logout {
+  position: absolute;
+  width: 62px;
+  height: 22px;
+  left: 1804px;
+  top: 60px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #ff9191;
+}
+.Consult {
+  position: absolute;
+  width: 83px;
+  height: 22px;
+  left: 760px;
+  top: 60px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 21px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a00c6;
+}
+.Calender {
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  left: 1020px;
+  top: 60px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 21px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a00c6;
+}
+.Adobt {
+  position: absolute;
+  width: 69px;
+  height: 22px;
+  left: 1280px;
+  top: 60px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 21px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a00c6;
+}
+.Mypage {
+  position: absolute;
+  width: 78px;
+  height: 22px;
+  left: 1542px;
+  top: 60px;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeoSB00";
+
+  font-size: 21px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a00c6;
+}
+/* 메인 */
+.biglogo {
+  position: absolute;
+  width: 421px;
+  height: 364px;
+  left: 474px;
+  top: 280px;
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 100px;
+
+  color: #1a00c6;
+}
+
+.maintext {
+  position: absolute;
+  width: 290px;
+  height: 29px;
+  left: 474px;
+  top: 670px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-size: 11px;
+  line-height: 26px;
+
+  color: #1a00c6;
+}
+
+.mainimage {
+  position: absolute;
+  width: 594px;
+  height: 594px;
+  left: 946px;
+  top: 316px;
+}
+
+#html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#rectangle1 {
+  position: absolute;
+  width: 1261px;
+  height: 173px;
+  left: 0px;
+  top: 910px;
+
+  background: #150485;
+}
+
+#rectangle2 {
+  position: absolute;
+  width: 1261px;
+  height: 149px;
+  left: 54px;
+  top: 809px;
+
+  background: #ffa9a9;
+}
+
+#rectangle3 {
+  position: absolute;
+  width: 111px;
+  height: 740px;
+  left: 1869px;
+  top: 158px;
+
+  background: #1500a2;
+}
+
+#rectangle4 {
+  position: absolute;
+  width: 83px;
+  height: 740px;
+  left: 1827px;
+  top: 230px;
+
+  background: #ffa9a9;
+}
+
+/* aboutpage */
+.Main-about {
+  position: absolute;
+  width: 1980px;
+  height: 1080px;
+  left: 0px;
+  top: 1080px;
+
+  background: white;
+}
+
+#about {
+  position: absolute;
+  width: 128px;
+  height: 42px;
+  left: 926px;
+  top: 99px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 42px;
+
+  color: #1a00c6;
+}
+
+.dog1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 260px;
+  top: 263px;
+}
+
+#title1 {
+  position: absolute;
+  width: 242px;
+  height: 36px;
+  left: 299px;
+  top: 654px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+#content1 {
+  position: absolute;
+  width: 350px;
+  height: 30px;
+  left: 245px;
+  top: 718px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 21px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+#btn1 {
+  position: absolute;
+  width: 141px;
+  height: 45px;
+  left: 349px;
+  top: 800px;
+
+  background: #ffffff;
+  border: 2px solid #ff9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ff9191;
+}
+
+.dog2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 830px;
+  top: 263px;
+}
+
+#title2 {
+  position: absolute;
+  width: 258px;
+  height: 36px;
+  left: 865px;
+  top: 654px;
+  font-family: "AppleSDGothicNeoSB00";
+  font-size: 27px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+#content2 {
+  position: absolute;
+  width: 309px;
+  height: 30px;
+  left: 835px;
+  top: 718px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+#btn2 {
+  position: absolute;
+  width: 141px;
+  height: 45px;
+  left: 919px;
+  top: 800px;
+
+  background: #ffffff;
+  border: 2px solid #ff9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ff9191;
+}
+
+.dog3 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 1400px;
+  top: 263px;
+}
+
+#title3 {
+  position: absolute;
+  width: 206px;
+  height: 36px;
+  left: 1457px;
+  top: 654px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+#content3 {
+  position: absolute;
+  width: 345px;
+  height: 30px;
+  left: 1387px;
+  top: 718px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+#btn3 {
+  position: absolute;
+  width: 141px;
+  height: 45px;
+  left: 1489px;
+  top: 800px;
+
+  background: #ffffff;
+  border: 2px solid #ff9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ff9191;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 1980px;
+  height: 314px;
+  left: 0px;
+  top: 2224px;
+
+  background: #ff9191;
+}
+
+.minilogo {
+  position: absolute;
+  width: 155px;
+  height: 66px;
+  left: 54px;
+  top: 67px;
+}
+
+.footer-description {
+  position: absolute;
+  width: 165px;
+  height: 96px;
+  left: 256px;
+  top: 73px;
+}
+
+#company {
+  position: absolute;
+  width: 87px;
+  height: 18px;
+  left: 0px;
+  top: -30px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#number {
+  position: absolute;
+  width: 180px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#email {
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  left: 0px;
+  top: 30px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#developer {
+  position: absolute;
+  width: 180px;
+  height: 18px;
+  left: 0px;
+  top: 60px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#line {
+  position: absolute;
+  width: 880px;
+  height: 0px;
+  left: -200px;
+  top: 160px;
+
+  border: 0.3px solid #ffffff;
+}
+
+.footer-menu {
+  position: absolute;
+  width: 74px;
+  height: 157px;
+  left: 963px;
+  top: 57px;
+}
+
+#footer-ask {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: -20px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-schedule {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 30px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-adoption {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 80px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-mypage {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 130px;
+
+  font-family: "AppleSDGothicNeoSB00";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.footer-sns {
+  position: absolute;
+  width: 210px;
+  height: 50px;
+  left: 1480px;
+  top: 67px;
+}
+
+#instagram {
+  position: absolute;
+  left: 0px;
+}
+
+#facebook {
+  position: absolute;
+  left: 80px;
+}
+
+#github {
+  position: absolute;
+  left: 160px;
+}

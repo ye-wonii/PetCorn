@@ -10,23 +10,12 @@ const conn = mysql.createConnection({
   password: "tlsdltkr44",
   database: "dogcorn",
 });
-const userList = [
-  { id: "tlsdltkr2530", email: "tlsdltkr2530@gmail.com", pw: "tlsdltkr-44" },
-  { id: "towel1017", email: "towel1017@naver.com", pw: "towel-1017" },
-];
-const findId = (id) => {
-  for (let i = 0; i < userList.length; i++) {
-    if (userList[i].id === id) {
-      return i;
-    }
-  }
-  return -1;
-};
 
 userRouter.post("/login", (req, res) => {
   var sess;
   const email = req.body.data.email;
   const pw = req.body.data.pw;
+  console.log(email, pw);
   conn.query(
     `select exists (select userid from user where userid = "${email}") as "is_id";`,
     (err, rows, field) => {
@@ -39,37 +28,30 @@ userRouter.post("/login", (req, res) => {
             const { userid, name, password } = rows[0];
             if (err) throw err;
             if (password === pw) {
-              res.cookie("user", userid, {
-                expires: new Date(Date.now() + 900000),
-                httpOnly: true,
-              });
-              req.session = session({
-                key: "sid",
-                secret: "secret",
-                resave: false,
-                saveUninitialized: true,
-                cookie: {
-                  maxAge: 24000 * 60 * 60,
-                },
-              });
               sess = req.session;
-              sess.name = name;
-              console.log(sess.name);
               sess.email = email;
-              res.status(200).send(sess.name);
+              sess.name = name;
+              res.status(200).send({ sess: `${name}님 환영합니다!` });
             } else {
-              res.status(200).send({ error: "패스워드가 다릅니다" });
+              res.status(403).send({ error: "패스워드가 다릅니다" });
             }
           }
         );
       } else {
-        res.status(200).send({ error: "아이디가 존재하지 않습니다" });
+        res.status(403).send({ error: "아이디가 존재하지 않습니다" });
       }
     }
   );
 });
+userRouter.post("/logout", (req, res) => {
+  console.log("logout");
+  req.session.destroy((err) => {
+    if (err) throw err;
+  });
+  res.redirect("http://localhost:3000/");
+});
 userRouter.post("/register", (req, res) => {
-  const { name, email, pw } = req.body.data;
+  const { name, email, pw } = req.body;
   conn.query(
     `select exists (select userid from user where userid = "${email}") as "is_id";`,
     (err, rows, field) => {

@@ -1,13 +1,21 @@
 const express = require("express");
-const router = express.Router({
+const todoRouter = express.Router({
   caseSensitive: false,
 });
+const mysql = require("mysql");
+const conn = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "root",
+  password: "tlsdltkr44",
+  database: "dogcorn",
+});
 
-router.get("/login", (req, res) => {
+todoRouter.get("/info", (req, res) => {
   res.json({ username: "isacc" });
 });
-router.get("/register", (req, res) => {
+
+todoRouter.get("/register", (req, res) => {
   res.json({ username: "isacc" });
 });
 
-module.exports = router;
+module.exports = todoRouter;
